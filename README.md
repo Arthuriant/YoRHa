@@ -1,4 +1,5 @@
 # YoRHa - Fanmade Website
+![image](https://github.com/user-attachments/assets/44aec32f-ef8d-4a91-b22a-12e9d4430578)
 
 A beautifully crafted **fanmade website** inspired by the world of **NieR:Automata**, built using **React.js**, **Vite**, **Tailwind CSS**, and **Three.js**. This project showcases 3D model rendering, animated UI, music playback, and modular component design in a modern web development stack.
 
