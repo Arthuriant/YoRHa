@@ -2,7 +2,8 @@ import React, { useRef, useEffect } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 
-const Mod2b = ({ currentAnim }) => {
+{/* Initialized 3D Model */}
+const ModA2 = ({ currentAnim }) => {
   const group = useRef()
   const { scene, animations } = useGLTF('/models/A2.glb')
   const { actions } = useAnimations(animations, group)
@@ -28,4 +29,4 @@ const Mod2b = ({ currentAnim }) => {
   return <primitive ref={group} object={scene} />
 }
 
-export default Mod2b
+export default ModA2

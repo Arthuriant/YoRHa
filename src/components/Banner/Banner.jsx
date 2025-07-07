@@ -50,7 +50,8 @@ const Banner = () => {
         <img className='' src={borderScreen}></img>
       </div>}
       <div  data-aos="fade-up" data-aos-delay="150" className="container mx-auto flex flex-col md:flex-row h-full">
-        {/* Kolom kiri: Canvas karakter */}
+
+        {/* Left Column: Character Canvas */}
         <div className="flex-col flex justify-center items-center border-white border-2">
           <div className="w-full h-[400px] sm:h-[500px] md:h-[600px]">
             <Canvas
@@ -73,7 +74,7 @@ const Banner = () => {
         </div>
         
 
-        {/* Kolom kanan: Teks */}
+        {/* Right Column: Detail */}
         <div className="flex flex-col p-10 w-full ">
           <h1 className="text-2xl sm:text-4xl font-bold mb-4  border-b-2">{characterData.name}</h1>
           <h1 className="text-xl sm:text-2xl font-bold mb-4  ">{characterData.subtitle}</h1>
@@ -82,12 +83,12 @@ const Banner = () => {
           <div className='text-xl sm:text-4xl mt-10'>
               <Typewriter
               words={characterData.quotes}
-              loop={false} // tampilkan sekali
+              loop={false} 
               cursor
               cursorStyle='_'
               typeSpeed={70}
               deleteSpeed={20}
-              delaySpeed={500} // jangan delay reset
+              delaySpeed={500} 
             />
           </div>
           

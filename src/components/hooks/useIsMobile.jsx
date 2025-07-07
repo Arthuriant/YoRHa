@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 
+{/* Detecting Mobile Screen */}
 export function useIsMobile() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 

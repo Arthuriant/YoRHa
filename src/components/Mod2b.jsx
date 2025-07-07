@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
 
+{/* Initialized 3D Model */}
 const Mod2b = ({ currentAnim }) => {
   const group = useRef()
   const { scene, animations } = useGLTF('/models/2b.glb')
@@ -8,12 +9,9 @@ const Mod2b = ({ currentAnim }) => {
 
   useEffect(() => {
     if (actions && currentAnim && actions[currentAnim]) {
-      // Stop semua animasi sebelumnya
       Object.values(actions).forEach((action) => {
         action.fadeOut(0.3)
       })
-
-      // Mainkan animasi yang dipilih
       actions[currentAnim].reset().fadeIn(0.3).play()
     }
   }, [currentAnim, actions])

@@ -71,7 +71,7 @@ const Navbar = ({ openModal }) => {
                         </ul>
                     </div>
 
-                    {/* Music + Auth */}
+                    {/* Music + Login */}
                     <div className="flex items-center gap-4 shrink-0">
                         <button onClick={toggleMusic}>
                             <FaMusic

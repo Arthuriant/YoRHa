@@ -8,7 +8,7 @@ const Modal = ({ isOpen, onClose, children }) => {
       setIsVisible(true);
       document.body.style.overflow = 'hidden';
     } else {
-      setTimeout(() => setIsVisible(false), 300); // tunggu animasi selesai
+      setTimeout(() => setIsVisible(false), 300); 
       document.body.style.overflow = 'auto';
     }
     return () => {
@@ -16,7 +16,6 @@ const Modal = ({ isOpen, onClose, children }) => {
     };
   }, [isOpen]);
 
-  // Jangan render sama sekali kalau tidak visible
   if (!isOpen && !isVisible) return null;
 
   return (

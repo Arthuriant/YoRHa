@@ -35,7 +35,7 @@ const Banner2 = () => {
     <div  className=' min-h-screen relative z-50  text-white ' style={{ backgroundImage: `url(${Background})` }}>
       <div  data-aos="fade-up" data-aos-delay="150" className="container mx-auto flex flex-col md:flex-row h-full">
 
-        {/* Kolom kanan: Teks */}
+        {/* Left Column: Detail */}
         <div className="flex flex-col p-10  w-full md:w-1/2">
                   <h1 className="text-2xl sm:text-4xl font-bold mb-4  border-b-2">{characterData.name}</h1>
           <h1 className="text-xl sm:text-2xl font-bold mb-4  ">{characterData.subtitle}</h1>
@@ -69,7 +69,7 @@ const Banner2 = () => {
 
         </div>
 
-                {/* Kolom kiri: Canvas karakter */}
+        {/* Left Column: Character Canvas */}
         <div className="flex-col flex justify-center items-center w-full md:w-1/2">
           <div className="w-full md:w-[600px] h-[400px] sm:h-[500px] md:h-[600px] border-white border-2">
             <Canvas camera={{ position: [0, 0, 3], fov: 70 }}>

@@ -32,8 +32,7 @@ function App() {
 
       localStorage.setItem('token', res.data.token);
       alert("Login success!");
-      closeModal(); // tutup modal
-      // redirect pakai navigate atau window.location.href = '/dashboard'
+      closeModal(); 
     } catch (err) {
       setMsg(err.response?.data?.message || 'Login failed');
     }
@@ -47,6 +46,7 @@ function App() {
   })
   return (
     <div>
+      {/*Content*/}
       <div className='h-[700px] relative overflow-hidden'>
         <video autoPlay loop muted className='fixed right-0 top-0 h-[700px] w-full object-cover z-10 inset-0'>
           <source src={bgVideo} type='video/mp4'/>
@@ -54,8 +54,6 @@ function App() {
         <Navbar openModal={openModal}/>
         <Hero/>
       </div>
-      
-      {/* Services Card ection*/}
       <section id='Services'>
         <Services/>
       </section>
@@ -67,6 +65,7 @@ function App() {
       </section>
       <Footer/>
 
+      {/* Modal */}
       <Modal isOpen={isModalOpen} onClose={closeModal }>
         <div className='flex items-center justify-center'>
           <img src={YorhaLogo} className='h-40'></img>
