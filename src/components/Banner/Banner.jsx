@@ -49,7 +49,7 @@ const Banner = () => {
       <div className=''>
         <img className='' src={borderScreen}></img>
       </div>}
-      <div className="container mx-auto flex flex-col md:flex-row h-full">
+      <div  data-aos="fade-up" data-aos-delay="150" className="container mx-auto flex flex-col md:flex-row h-full">
         {/* Kolom kiri: Canvas karakter */}
         <div className="flex-col flex justify-center items-center border-white border-2">
           <div className="w-full h-[400px] sm:h-[500px] md:h-[600px]">

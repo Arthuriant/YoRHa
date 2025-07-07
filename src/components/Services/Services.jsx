@@ -62,7 +62,7 @@ const Services = () => {
                 </div>
           </div>
 
-          <div className='flex flex-col md:flex-row gap-4 bg-[#2F2F2F]/80 text-white p-4 '>
+          <div data-aos="fade-up" data-aos-delay="300" className='flex flex-col md:flex-row gap-4 bg-[#2F2F2F]/80 text-white p-4 '>
             <div className='p-4'>
               <video autoPlay loop muted className=' object-cover  h-96/2  sm:h-96   z-10 border-4 border-white '>
                 <source src={OperatorVid} type="video/mp4"  />

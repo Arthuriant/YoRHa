@@ -32,8 +32,8 @@ const Banner2 = () => {
     
 
 
-    <div className=' min-h-screen relative z-50  text-white ' style={{ backgroundImage: `url(${Background})` }}>
-      <div className="container mx-auto flex flex-col md:flex-row h-full">
+    <div  className=' min-h-screen relative z-50  text-white ' style={{ backgroundImage: `url(${Background})` }}>
+      <div  data-aos="fade-up" data-aos-delay="150" className="container mx-auto flex flex-col md:flex-row h-full">
 
         {/* Kolom kanan: Teks */}
         <div className="flex flex-col p-10  w-full md:w-1/2">
